@@ -1,0 +1,57 @@
+body{
+    background-color: var(--color-dark);
+    font-size: 40px;
+    line-height: 1.28px;
+    font-family: var(--font-family-base);
+    color: var(--color-dark);    
+}
+
+
+
+.log{
+    position: absolute;
+    @include abc-center();
+    background-color: var(--color-gold);
+    padding: 44px 24px;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: -5px 5px 5px var(--color-accent);
+}
+
+.suk{
+    color: var(--color-gold);
+    @include abc-center();
+    top: 62%;
+    left: 50%;
+    letter-spacing: 15px;
+    font-size: 60px;
+}
+
+a,
+button,
+textarea,
+input,
+svg *{
+    transition-duration: var(--transition-duration);
+}
+
+a{
+    color: inherit;
+
+    &,
+    &:hover{
+        text-decoration: none;       
+    }
+}
+
+h1,h2{
+    font-weight: 600;
+}
+
+h1{
+    font-size: 88px;
+}
+
+h3{
+    font-size: var(--font-size-second-title);
+}

@@ -1,0 +1,168 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../font/Raleway-Medium.woff2"), format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../font/Raleway-Bold.woff2"), format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+:root {
+  --color-light: #FFF;
+  --color-dark: #2C2D35;
+  --color-accent: #598D66;
+  --color-gold: #EEDB6D;
+  --color-light-grey: #86928B;
+  --transition-duration: 0.2s;
+  --font-family-base: "Raleway";
+  --font-size-base: 18px;
+  --font-size-second-title: 40px;
+  --conteiner-pddingY: 165px;
+  --conteiner-max-width: 1110px;
+  --button-heught: 65px;
+  --button-border: 1px solid var(--color-accent);
+  --button-padding: 20px 60px;
+}
+
+.conteiner {
+  max-width: var(--conteiner-max-width);
+  padding-inline: var(--conteiner-paddingY);
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-mobile {
+  display: none !important;
+}
+
+.hidden-mobile {
+  display: none !important;
+}
+
+body {
+  background-color: var(--color-dark);
+  font-size: 40px;
+  line-height: 1.28px;
+  font-family: var(--font-family-base);
+  color: var(--color-dark);
+}
+
+.log {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-color: var(--color-gold);
+  padding: 44px 24px;
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: -5px 5px 5px var(--color-accent);
+}
+
+.suk {
+  color: var(--color-gold);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  top: 62%;
+  left: 50%;
+  letter-spacing: 15px;
+  font-size: 60px;
+}
+
+a,
+button,
+textarea,
+input,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+}
+a, a:hover {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 88px;
+}
+
+h3 {
+  font-size: var(--font-size-second-title);
+}/*# sourceMappingURL=style.css.map */
